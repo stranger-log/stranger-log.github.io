@@ -1,0 +1,92 @@
+baseURL = 'https://bxcxygg.github.io/'
+languageCode = 'zh-cn'
+defaultContentLanguage = "zh-cn"
+title = '不信此心尤梗梗'
+theme = "kagome"
+hasCJKLanguage = true
+
+[author]
+  name = "bxcxygg"
+  email = "3200828584@qq.com"
+  description = "不信此心尤梗梗"
+  avatar = "https://avatars.githubusercontent.com/u/24350023?v=4"
+
+# 菜单/导航栏
+[menu]
+  # 顶部导航栏
+  [[menu.main]]
+    identifier = "/"
+    name = "🏠主页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "/posts"
+    name = "📖文章"
+    url = "/posts"
+    weight = 2
+  [[menu.main]]
+    identifier = "/categories"
+    name = "🗂️分类"
+    url = "/categories"
+    weight = 3
+  [[menu.main]]
+    identifier = "/archives"
+    name = "📅归档"
+    url = "/archives"
+    weight = 4
+  [[menu.main]]
+    identifier = "/about"
+    name = "🧸关于"
+    url = "/about"
+    weight = 5
+  [[menu.main]]
+    identifier = "/link"
+    name = "🔗相关链接"
+    url = "/link"
+    weight = 6
+  
+  # 底部社交图标
+  [[menu.social]]
+    identifier = "github"
+    name = "github"
+    url = "https://github.com/bxcxygg"
+    weight = 1
+
+# URL格式
+[permalinks]
+  posts = "/:section/:year:month:day:15:04/"
+  files = "/:section/:year:month:day:15:04/"
+  docs = "/:section/:year:month:day:15:04/"
+
+# 主题相关配置项
+[params]
+  keywords = ['theme', 'kagome']
+  description = ""
+  mainSections = ["posts"]
+  # 国内备案号
+  beian = ""
+  # TOC目录出现字符长度限制
+  toc_show_len = 300
+
+  [params.analytics]
+    baidu = ""
+
+  [params.widget]
+    # 相关文章推荐数量
+    articles_count = 6
+    # 分类相关显示数量
+    categories_count = 6
+    # 标签相关显示数量
+    tags_count = 12
+
+  [params.aplayer]
+    theme = "#b7daff"
+    autoplay = false
+    loop = "none"
+    mutex = true
+
+  [params.dplayer]
+    theme = "#b7daff"
+    autoplay = false
+    loop = false
+    mutex = true
